@@ -1,3 +1,3 @@
-export const onRequestGet = () => {
-  return new Response("Hello from Functions")
+export const onRequestGet = ({ next }) => {
+  return next('/')
 }
