@@ -1,0 +1,29 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx wrangler pages dev dist --kv NAMESPACE --binding SENTRY_DSN=\"https://9305172a458b4e32a6acd4bacc6d1df9@o1072497.ingest.sentry.io/6071273\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregBrimble/functions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregBrimble/functions/issues"
+  },
+  "homepage": "https://github.com/GregBrimble/functions#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.2.0",
+    "typescript": "^4.5.2",
+    "wrangler": "^0.0.0-fsw-beta.5"
+  },
+  "dependencies": {
+    "toucan-js": "^2.5.0"
+  }
+}
