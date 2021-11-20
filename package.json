@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx wrangler pages dev dist --kv NAMESPACE --binding SENTRY_DSN=\"https://9305172a458b4e32a6acd4bacc6d1df9@o1072497.ingest.sentry.io/6071273\"",
+    "dev": "npx wrangler pages dev dist --binding MY_ENV_VAR=\"set_from_wrangler\" --binding SENTRY_DSN=\"https://9305172a458b4e32a6acd4bacc6d1df9@o1072497.ingest.sentry.io/6071273\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
