@@ -1,6 +1,8 @@
-export const onRequest = ({ request, env }) => {
+export const onRequest = async ({ request, env }) => {
   try {
-    return env.ASSETS.fetch(new Request("/relationships.png", request));
+    return await env.ASSETS.fetch(
+      new Request("http://fakehost/relationships.png", request)
+    );
   } catch (thrown) {
     return new Response(thrown.message);
   }
