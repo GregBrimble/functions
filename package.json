@@ -2,6 +2,7 @@
   "name": "functions",
   "scripts": {
     "start": "wrangler pages dev public",
+    "start:livereload": "wrangler pages dev public --live-reload",
     "start:kv": "wrangler pages dev public --kv MY_KV_BINDING",
     "help": "wrangler pages dev --help"
   },
