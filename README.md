@@ -1,13 +1,29 @@
 # Functions
 
-- [x] First function
+## Setup
 
-- [x] Middleware
+```sh
+git clone git@github.com:GregBrimble/functions.git;
+cd functions;
+npm install;
+```
 
-  - [x] Sentry Integration
+This will have installed wrangler for you. Otherwise, users can run:
 
-- [ ] Client-side service worker injector thing
+```sh
+npm install --save-dev wrangler@beta
+```
 
-Can you can do `[id]?.ts` to make it optional and also match `/`
+Also installed is [the TypeScript types](https://github.com/cloudflare/workers-types) you can use to improve your DX. Again, users can run:
 
-`/index.ts`
+```sh
+npm install --save-dev typescript @cloudflare/workers-types
+```
+
+## Usage
+
+```sh
+npm run start
+```
+
+For info about options that are available (e.g. configuring a KV binding, run `npx wrangler pages dev --help`).
